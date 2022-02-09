@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+ 
+  html,body{
+       width: 100%;
+       height: 100%;
+       background-color: gray;
+  }
+ #main
+ {    position: relative;
+      display: flex;
+      width: 75%;
+      height: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    
+
+ } 
+ #left
+ {
+      position: relative;
+      background-color: #333;
+      width: 30%;
+      height: 100%;
+
+
+ }
+ #text
+{   position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    font-size: 48px;
+    font-family: hursheys;
+    line-height: 105px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+    
+}
+ #center
+ {   
+      background-image: url(https://images.unsplash.com/photo-1585315285676-620f623cf4bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+      width: 50%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+ }
+
+ 
+#right
+{    position: relative;
+     background-color: darkgray;
+     width: 20%;
+     height: 100%;
+}
+#top
+{  
+    background-image: url(https://images.unsplash.com/photo-1601762603339-fd61e28b698a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover; 
+    width: 100%;
+    height: 80%;
+}
+#bottom
+{
+    position:relative;
+    background-color: gold;
+    width: 100%;
+    height: 20%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#bottom h1
+{
+     position: absolute;
+     font-size: 35px;
+     top: 50%;
+     left: 50%;
+     font-family: hursheys;
+     transform: translate(-50%,-50%);
+     letter-spacing: 2px;
+     font-weight: 100;
+     
+}
+#nav{
+     width: 100%;
+     height: 20px;
+     background-color: rgba(255, 0, 0, 0);
+     position: absolute;
+     z-index: 99;
+     display: flex;
+     justify-content: space-between;
+     padding: 0 20px;
+     top: 20px;
+}
+#down
+{
+   width: 46%;
+   height: 100px;
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   background-color: rgba(159, 160, 94, 0);
+   z-index: 99;
+   top: 88%;
+   left: 29%;
+   transform: translate(-50%,-50%);
+   align-items: center;
+   color: rgb(255, 255, 255);
+   box-shadow: 4px 4px 1px silver;
+   transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+   
+}
+ #down #naav 
+{
+      letter-spacing: 0px;
+      line-height: 15px;
+      font-size: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: rgb(255, 217, 0);
+      width: 10px;    
+    
+}
+#naav h6
+{  
+
+     color: black;
+    
+}
+#sty
+{   
+     position: relative;
+       font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 10px;
+      
+}
+#sty #star
+
+{   
+     position: absolute;
+     font-size: 100px;
+     font-family: hursheys;
+     font-weight: 50;
+     left: -20px;
+    
+}
+#line
+{         
+     position: absolute;
+     top: 67%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 100%;
+     height: 30px;
+     border-top: solid .3px;
+     border-bottom:solid .3px ;
+     color: rgb(192, 40, 40);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     letter-spacing: 1px;
+     z-index: 2;
+     white-space:normal;
+     transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#line #one
+{
+     position: absolute;
+     left: 65px;
+     font-size: 6px;
+}
+ #line #two
+{
+     position: absolute;
+     right: 50px;
+     font-size: 6px;
+}
+#search
+{    position:absolute;
+     width: 110px;
+     height: 110px;
+     border-radius: 50%;
+     border: solid .3px;
+     color: brown;
+     background-color: rgba(255, 0, 0, 0);
+     top: 35%;
+     left: 75%;
+     transform: translate(-50%,-50%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 5px;
+     letter-spacing: 4px;
+     font-weight:800;
+     transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+#line:hover
+{
+     background-color: rgba(0, 0, 0, 0.37);
+     cursor:pointer;
+}
+#search:hover
+{
+     background-color: rgba(0, 0, 0, 0.438);
+     cursor:pointer;
+     color:#fff;
+}
+#search #sea:hover
+{
+     color: blue;
+}
+#text:hover
+{    color: rgba(192, 40, 40, 0);
+    -webkit-text-stroke: .1px brown;
+    cursor:pointer;
+    height: 50%;
+  
+}
+#bottom:hover
+{
+     background-color: rgba(0, 0, 0, 0.596);
+     color: #fff;
+     -webkit-text-stroke: 1px brown;
+     cursor:pointer;
+}
+#nav #s:hover
+{
+     color: #333;
+     cursor:pointer;
+     background-color:rgb(81, 184, 184);
+}
+#nav #h:hover
+{
+     color: gray;
+     cursor:pointer;
+     background-color: brown;
+    
+}
+#nav #l:hover
+{
+     color: gray;
+     cursor:pointer;
+     background-color: darkgreen;
+}
+#nav #o:hover
+{
+     color: gray;
+     cursor:pointer;
+     background-color: black;
+}
+#down:hover
+{
+     background-color:rgba(255, 255, 255, 0.205);
+     color: #000;
+     cursor:pointer;
+     
+}
